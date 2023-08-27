@@ -18,13 +18,11 @@ Usage ~
                                                  *ddu-source-chronicle-usage*
 
 >
-
-  " default
-  call ddu#start({"sources": [{"name": "chronicle"}]})
-
-  " kind specific
-  call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
-
+	" default
+	  call ddu#start({"sources": [{"name": "chronicle"}]})
+	
+	  " kind specific
+	  call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
 <
 
 =============================================================================
