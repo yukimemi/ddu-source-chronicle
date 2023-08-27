@@ -19,10 +19,10 @@ Usage ~
 
 >
 	" default
-	  call ddu#start({"sources": [{"name": "chronicle"}]})
+	call ddu#start({"sources": [{"name": "chronicle"}]})
 	
-	  " kind specific
-	  call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
+	" kind specific
+	call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
 <
 
 =============================================================================

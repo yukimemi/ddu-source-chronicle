@@ -25,11 +25,11 @@ ddu-source-chronicle is a ddu source for L<yukimemi/dps-chronicle|https://github
 
 =begin vim
 
-  " default
-  call ddu#start({"sources": [{"name": "chronicle"}]})
+" default
+call ddu#start({"sources": [{"name": "chronicle"}]})
 
-  " kind specific
-  call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
+" kind specific
+call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]})
 
 =end vim
 
