@@ -1,6 +1,6 @@
 # ddu-source-chronicle
 
-ddu-source-chronicle is a ddu source for [yukimemi/dps-chronicle](https://github.com/yukimemi/dps-chronicle).
+ddu-source-chronicle is a ddu source for [yukimemi/chronicle.vim](https://github.com/yukimemi/chronicle.vim).
 
 # Requirements 
 
@@ -8,7 +8,7 @@ ddu-source-chronicle is a ddu source for [yukimemi/dps-chronicle](https://github
 - [vim-denops/denops.vim: 🐜 An ecosystem of Vim/Neovim which allows developers to write cross-platform plugins in Deno](https://github.com/vim-denops/denops.vim)
 - [Shougo/ddu.vim: Dark deno-powered UI framework for neovim/Vim8](https://github.com/Shougo/ddu.vim)
 - [Shougo/ddu-kind-file: File kind for ddu.vim](https://github.com/Shougo/ddu-kind-file)
-- [yukimemi/dps-chronicle: Denops Chronicle](https://github.com/yukimemi/dps-chronicle)
+- [yukimemi/chronicle.vim: Denops Chronicle](https://github.com/yukimemi/chronicle.vim)
 # Usage 
 
 ```vim
@@ -22,7 +22,7 @@ call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]}
 # Params 
 
 `ddu-source-chronicle-param-kind`            
-source kind of [dps-chronicle](dps-chronicle)
+source kind of [chronicle.vim](chronicle.vim)
 Default is "read"
 ["read", "write"]
 

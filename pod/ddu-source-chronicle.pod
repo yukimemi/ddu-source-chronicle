@@ -1,13 +1,13 @@
 ---
 name: ddu-source-chronicle
-description: ddu.vim source for yukimemi/dps-chronicle
+description: ddu.vim source for yukimemi/chronicle.vim
 ---
 
 =pod
 
 =head1 ddu-source-chronicle
 
-ddu-source-chronicle is a ddu source for L<yukimemi/dps-chronicle|https://github.com/yukimemi/dps-chronicle>.
+ddu-source-chronicle is a ddu source for L<yukimemi/chronicle.vim|https://github.com/yukimemi/chronicle.vim>.
 
 =head1 Requirements X<ddu-source-chronicle-requirements>
 
@@ -19,7 +19,7 @@ ddu-source-chronicle is a ddu source for L<yukimemi/dps-chronicle|https://github
 
 =item [Shougo/ddu-kind-file: File kind for ddu.vim](https://github.com/Shougo/ddu-kind-file)
 
-=item [yukimemi/dps-chronicle: Denops Chronicle](https://github.com/yukimemi/dps-chronicle)
+=item [yukimemi/chronicle.vim: Denops Chronicle](https://github.com/yukimemi/chronicle.vim)
 
 =head1 Usage X<ddu-source-chronicle-usage>
 
@@ -36,7 +36,7 @@ call ddu#start({"sources": [{"name": "chronicle", "params": {"kind": "write"}}]}
 =head1 Params X<ddu-source-chronicle-params>
 
 C<ddu-source-chronicle-param-kind>            X<ddu-source-chronicle-param-kind>
-source kind of L<dps-chronicle>
+source kind of L<chronicle.vim>
 Default is "read"
 ["read", "write"]
 
