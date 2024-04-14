@@ -1,7 +1,7 @@
 import { BaseSource, Item } from "https://deno.land/x/ddu_vim@v3.10.3/types.ts";
 import { Denops } from "https://deno.land/x/ddu_vim@v3.10.3/deps.ts";
 import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.7.1/file.ts";
-import { assert, is, isArrayOf } from "https://deno.land/x/unknownutil@v3.17.2/mod.ts";
+import { assert, is, isArrayOf } from "https://deno.land/x/unknownutil@v3.17.3/mod.ts";
 
 const kinds = ["read", "write"];
 
