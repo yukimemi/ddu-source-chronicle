@@ -1,6 +1,6 @@
 import { BaseSource, type Denops, Item } from "jsr:@shougo/ddu-vim@5.0.0/types";
 import { ActionData } from "jsr:@shougo/ddu-kind-file@0.8.0";
-import { assert, is, isArrayOf } from "jsr:@core/unknownutil@3.18.1";
+import { assert, is, isArrayOf } from "jsr:@core/unknownutil@4.0.0";
 
 const kinds = ["read", "write"];
 
