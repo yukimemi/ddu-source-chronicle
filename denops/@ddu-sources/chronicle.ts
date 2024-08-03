@@ -1,6 +1,6 @@
 import { BaseSource, type Denops, Item } from "jsr:@shougo/ddu-vim@5.0.0/types";
 import { ActionData } from "jsr:@shougo/ddu-kind-file@0.8.0";
-import { assert, is, isArrayOf } from "jsr:@core/unknownutil@4.0.0";
+import { z } from "npm:zod@3.23.8";
 
 const kinds = ["read", "write"];
 
@@ -19,8 +19,8 @@ export class Source extends BaseSource<Params> {
       async start(controller) {
         const idx = kinds.indexOf(args.sourceParams.kind);
         const result = await args.denops.call(`chronicle#${kinds.at(idx)}#list`);
-        assert(result, isArrayOf(is.String));
-        controller.enqueue(result.map((p) => ({
+        const parsedResult = z.string().array().parse(result);
+        controller.enqueue(parsedResult.map((p) => ({
           word: p,
           action: {
             path: p,
