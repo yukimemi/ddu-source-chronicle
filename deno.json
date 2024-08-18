@@ -3,7 +3,7 @@
     "check": "deno check ./**/*.ts",
     "fmt": "deno fmt",
     "lint": "deno lint",
-    "test": "deno test -A",
+    "test": "deno test -A ./**/*.ts",
     "ci": "deno task check && deno task lint && deno task fmt --check && deno task test",
     "hooks:install": "deno run --allow-read=deno.json,.git/hooks/ --allow-write=.git/hooks/ jsr:@hongminhee/deno-task-hooks",
     "hooks:pre-commit": "deno task ci",
