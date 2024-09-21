@@ -1,20 +1,18 @@
-import { BaseSource, type Denops, Item } from "jsr:@shougo/ddu-vim@5.0.0/types";
-import { ActionData } from "jsr:@shougo/ddu-kind-file@0.8.0";
+import type { ActionData } from "jsr:@shougo/ddu-kind-file@0.9.0";
+import type { Item } from "jsr:@shougo/ddu-vim@6.1.0/types";
+import { BaseSource, type GatherArguments } from "jsr:@shougo/ddu-vim@6.1.0/source";
 import { z } from "npm:zod@3.23.8";
-
-const kinds = ["read", "write"];
 
 type Params = {
   kind: string;
 };
 
-export class Source extends BaseSource<Params> {
-  kind = "file";
+const kinds = ["read", "write"];
 
-  gather(args: {
-    denops: Denops;
-    sourceParams: Params;
-  }): ReadableStream<Item<ActionData>[]> {
+export class Source extends BaseSource<Params> {
+  override kind = "file";
+
+  gather(args: GatherArguments<Params>): ReadableStream<Item<ActionData>[]> {
     return new ReadableStream({
       async start(controller) {
         const idx = kinds.indexOf(args.sourceParams.kind);
