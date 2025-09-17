@@ -1,7 +1,7 @@
 import type { ActionData } from "jsr:@shougo/ddu-kind-file@1.0.0";
 import type { Item } from "jsr:@shougo/ddu-vim@11.1.0/types";
 import { BaseSource, type GatherArguments } from "jsr:@shougo/ddu-vim@11.1.0/source";
-import { z } from "npm:zod@4.1.8";
+import { z } from "npm:zod@4.1.9";
 
 type Params = {
   kind: string;
