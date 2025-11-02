@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@shougo/ddu-kind-file": "jsr:@shougo/ddu-kind-file@^1.0.0",
+    "@shougo/ddu-vim": "jsr:@shougo/ddu-vim@^11.1.0",
+    "@std/assert": "jsr:@std/assert@^1.0.15",
+    "zod": "npm:zod@^4.1.12"
+  }
+}
